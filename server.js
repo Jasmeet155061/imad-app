@@ -26,7 +26,8 @@ function createTemplate(data){
     var heading = data.heading;
     var content = data.content;
 } 
-var htmlTemplate = `
+var htmlTemplate = 
+`
 <html>
     <head>
         <title>Article One | Jasmeet Singh</title>
@@ -50,6 +51,7 @@ var htmlTemplate = `
     </body>
 </html>
 ;
+return htmlTemplate;
 }
 
 app.get('/', function (req, res) {
