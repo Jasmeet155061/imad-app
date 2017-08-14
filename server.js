@@ -19,6 +19,7 @@ var articleOne =  {
         <p>This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.</p>`
         
 };
+
 function createTemplate(data){
     var title = data.title;
     var date = data.date;
@@ -32,9 +33,6 @@ var htmlTemplate = `
         <meta name = "viewport" content="width=device-width, initial-scale=1"/>
         <link href="/ui/style.css" rel="stylesheet" />
         <style>
-            
-           
-            
         </style>
     </head>
     <body>
@@ -51,7 +49,7 @@ var htmlTemplate = `
         </div>
     </body>
 </html>
-`;
+;
 }
 
 app.get('/', function (req, res) {
