@@ -20,17 +20,19 @@ var articleOne =  {
         
 };
 
-function createTemplate(data){
+function createTemplate(data) {
     var title = data.title;
     var date = data.date;
     var heading = data.heading;
     var content = data.content;
 } 
-var htmlTemplate = 
-`
+var htmlTemplate = `
+
 <html>
     <head>
-        <title>Article One | Jasmeet Singh</title>
+        <title>
+        ${title}
+        </title>
         <meta name = "viewport" content="width=device-width, initial-scale=1"/>
         <link href="/ui/style.css" rel="stylesheet" />
         <style>
@@ -44,13 +46,15 @@ var htmlTemplate =
         <hr/>
         <h3>${heading}</h3>
         <div>
+        ${date}
+        </div>
+        <div>
         ${content}
         </div>
-        ${date}
         </div>
     </body>
 </html>
-    `;
+`;
 return htmlTemplate;
 }
 
